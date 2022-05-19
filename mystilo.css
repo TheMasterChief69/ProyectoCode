@@ -1,0 +1,49 @@
+body{
+    margin:0px;
+}
+.header{
+    background-color: rgba(190, 180, 180, 0.247);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 5px 10%;
+    list-style: none;
+}
+.sidebar{
+    margin-top: 2px;
+    position:absolute;
+    width: 180px;
+    background-color: aquamarine;
+    text-align: center;
+    height: 500px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-diagrama{
+    display: inline-flex;
+}
+.cuadroTexto{
+    margin-left: 180px;
+}
+.modificacion{
+    margin-top: 2px;
+    background-color: aquamarine;
+    width: 180px;
+    right: 700px;
+    bottom: 0px;
+    height: 500px;
+}
+
+.sidebar button{
+    display: block;
+    padding: 5px;
+    margin: 7px;
+    width: 60px;
+    margin-left: 17px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystilo.css">
+    
+    <link rel="stylesheet" type="text/css" href="build/joint.css" />
+    <link rel="stylesheet" type="text/css" href="css/umlcd.css" />
+
+    <title>Proyecto2</title>
+</head>
+
+<body>
+    <header class="header">
+        <li class="btn"><button onclick="copiarPortapapeles()">COPIAR</button></li>
+        <li class="btn"><button onclick="pegarPortapapeles()">PEGAR</button></li>
+        <li class="btn"><button onclick="cortarPortapapeles()">CORTAR</button></li>
+        <li class="btn"><button onclick="identar()">IDENTAR</button></li>
+        <li><input type="file" id="archivos"></li>
+    </header>
+        <div class="container-diagrama">
+            <div class="sidebar">
+                <h2>Relaciones</h2>
+                <ul>
+                    <li><button>--></button></li>
+                    <li><button>==></button></li>
+                    <li><button>usa</button></li>
+                </ul>
+                <h2>Crear Clase</h2>
+                <ul>
+                    <li><button onclick='crearNuevo(document.getElementById("nombreClase").value,[document.getElementById("atributo1").value,document.getElementById("atributo2").value,document.getElementById("atributo3").value,document.getElementById("atributo4").value,document.getElementById("atributo5").value],[document.getElementById("metodo1").value,document.getElementById("metodo2").value,document.getElementById("metodo3").value,document.getElementById("metodo4").value, document.getElementById("metodo5").value])'>Nuevo</button></li>
+                    
+                </ul>
+            </div>
+        <div class = "cuadroTexto">
+            <textarea name="diagrama" id="codigo" cols="110" rows="33"></textarea>
+        </div>
+        <div class="modificacion">
+            <h2>Clase</h2>
+            <div><input  type="text" id = "nombreClase" name ="name"></div>
+            <div><h4>Atributos</h4></div>
+            <div><input id = "atributo1" type="text"></div>
+            <div><input id = "atributo2" type="text"></div>
+            <div><input id = "atributo3" type="text"></div>
+            <div><input id = "atributo4" type="text"></div>
+            <div><input id = "atributo5" type="text"></div>
+            <div><h4>Metodos</h4></div>
+            <div><input id = "metodo1" type="text"></div>
+            <div><input id = "metodo2" type="text"></div>
+            <div><input id = "metodo3" type="text"></div>
+            <div><input id = "metodo4" type="text"></div>
+            <div><input id = "metodo5" type="text"></div>
+        </div>
+    </div>
+
+    <div id="paper"></div>
+
+       <script src="node_modules/jquery/jquery.js"></script>
+        <script src="node_modules/lodash/lodash.js"></script>
+        <script src="node_modules/backbone/backbone.js"></script>
+
+        <script src="build/joint.js"></script>
+        <script src="src/umlcd.js"></script>
+        <script src="./src/app.js"></script>
+</body>
+
+</html>
